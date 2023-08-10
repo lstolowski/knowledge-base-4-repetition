@@ -1,6 +1,7 @@
 # Java
 
 ### Basics
+- [Notatki z SCJP (Java6)](./scjp-notatki.pdf)
 - Java 8 / Java 11 / Java 19 - whats new
   - 8-11 https://nullpointerexception.pl/zmiany-w-javie-od-wersji-8-do-java-11/
   - 11-17 https://nullpointerexception.pl/zmiany-w-javie-od-wersji-11-do-java-17/
