@@ -4,9 +4,8 @@ Use Markdown: [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki
 
 
 #### Langs
-[Java](./langs/java.md)
-
-[Kotlin](./langs/kotlin.md)
+- [Java](./langs/java.md)
+- [Kotlin](./langs/kotlin.md)
 
 #### Backend frameworks
 [Spring & Spring boot](./frameworks/spring.md)
