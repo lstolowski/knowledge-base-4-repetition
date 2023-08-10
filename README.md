@@ -13,9 +13,9 @@ Use Markdown: [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki
 - [JUnit, Mockito, Java&Kotlin test tools](./frameworks/testing.md)
 
 #### Databases
-- [SQL, Relational DBs](./frameworks/sql-db.md)
+- [SQL, Relational DBs](./db/sql-db.md)
 
-- [NoSql DBs](./frameworks/nosql-db.md)
+- [NoSql DBs](./db/nosql-db.md)
 
 #### Frontend
 - [Javascript / Typescript](./frontend/js-ts.md)
@@ -25,6 +25,7 @@ Use Markdown: [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki
 - [HTML CSS](./frontend/html-css.md)
 
 #### Architecture & design
+- [Buzzwords & best practices](./architecture/practices.md) 
 - [Design patterns](./architecture/design-patterns.md)
 
 - [Software architecture patterns](./architecture/software-patterns.md)
@@ -37,3 +38,4 @@ Use Markdown: [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki
 - [CI/CD](./devops/ci-cd.md)
 
 - [AWS](./devops/aws.md)
+
