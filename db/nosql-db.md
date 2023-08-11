@@ -1,5 +1,5 @@
 ## Nosql
-- pros and cons
+- pros and cons https://mansfeld.pl/bazy-danych/bazy-danych-nosql-zalety-wady/
 - Dynamo 
   - keys
   - Java api
@@ -7,3 +7,10 @@
   - features
 - Redis
 - GraphQL
+
+### Podział baz nosql
+- bazy danych dokumentów – MongoDB, CouchDB,
+- kolumnowe bazy danych – Apache Cassandra,
+- bazy danych typu klucz-wartość – Redis, Couchbase Server, DynamoDB,
+- systemy pamięci podręcznej – Redis, Memcached,
+- grafowe bazy danych – Neo4J, ArangoDB, FaunaDB, OrientDB
