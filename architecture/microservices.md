@@ -4,7 +4,9 @@
   - https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
   - Saga https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/saga-pattern.html
   - CQRS i Event Sourcing [see software architecture](./software-patterns.md)
-  - More patterns https://microservices.io/patterns/microservices.html 
+  - More patterns https://microservices.io/patterns/microservices.html
+  - circuit breaker https://softwareskill.pl/circuit-breaker-pattern
+  - retry pattern https://softwareskill.pl/retry-pattern
 
 ### Communication in microservices
 
@@ -16,7 +18,7 @@
 
 - REST
   - metody, różnice, co można wysyłać (json, headers, request params)
-  
+- Rest vs async (queue/topics) https://softwareskill.pl/integracja-rest-czy-system-kolejkowy  
 - Authentication vs authorization
     - różnice
     - jakieś przykłady (jwt, serwery autentykami, OAUth2)
