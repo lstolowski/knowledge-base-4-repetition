@@ -24,3 +24,8 @@
     - jakieś przykłady (jwt, serwery autentykami, OAUth2)
     - spring security - zgrubsza [see spring](../frameworks/spring.md)
 
+### Frameworks
+- Spring boot (obvious)
+- Micronaut https://micronaut.io/
+  - lekki, szybko startuje, zajmuje mniej pamięci
+  - podobna koncepcja comtrollerów co spring
