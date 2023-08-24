@@ -18,8 +18,10 @@
 ### Zagadnienia
 
 - CAP Theorem/Brewer's Theorem  https://www.ibm.com/topics/cap-theorem
-  - trójkąt gdzie tylko 2 punkty można zapewnić: Consistency, Availability, Partition tolerance
+  - trójkąt gdzie tylko 2 punkty można zapewnić w razie błedów: Consistency, Availability, Partition tolerance
   - bazy typu CP, AP, CA
   - MongoDB - przykład CP, Cassandra - AP, przykłady CA w distributed systems nie istnieją (musza mieć partycje)
+  - https://www.bmc.com/blogs/cap-theorem/
+  
 
 
