@@ -24,6 +24,11 @@
     - jakieś przykłady (jwt, serwery autentykami, OAUth2)
     - spring security - zgrubsza [see spring](../frameworks/spring.md)
 
+- Websocket
+  - connection client-server, more efficient than Polling or Long-Polling, client and server listen each other 
+  - WS w javascript: https://bulldogjob.pl/readme/prosto-o-websocket 
+  - WS in Java (via STOMP protocol) https://spring.io/guides/gs/messaging-stomp-websocket/
+
 ### Frameworks
 - Spring boot (obvious)
 - Micronaut https://micronaut.io/
