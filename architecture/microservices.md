@@ -14,6 +14,11 @@
   - intro https://bulldogjob.pl/readme/apache-kafka-opis-dzialania-i-zastosowania
   - spring kafka https://www.baeldung.com/spring-kafka 
   - partitions https://softwareskill.pl/apache-kafka-ile-partycji
+
+- RabbitMQ 
+  - Kafka vs Rabbit: 
+    - https://www.simplilearn.com/kafka-vs-rabbitmq-article
+    - https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/
 - AWS SQS/SNQ , Kinesis
 
 - REST
