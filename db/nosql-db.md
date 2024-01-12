@@ -1,6 +1,6 @@
 ## Nosql
 - pros and cons https://mansfeld.pl/bazy-danych/bazy-danych-nosql-zalety-wady/
-- Dynamo 
+- [Dynamo](./dynamodb.md) 
   - keys
   - Java api
 - mongodb
