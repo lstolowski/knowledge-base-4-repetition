@@ -28,3 +28,4 @@ docs https://kotlinlang.org/docs/coroutines-overview.html
 
 YT tutorials https://www.youtube.com/watch?v=ShNhJ3wMpvQ&list=PLQkwcJG4YTCQcFEPuYGuv54nYai_lwil_
 
+https://www.youtube.com/watch?v=6zLyFzHc6xs&t=136s
