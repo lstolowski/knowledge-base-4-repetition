@@ -18,7 +18,74 @@
 - kotest https://www.baeldung.com/kotlin/kotest
 
 
-### Integration testing tools
+### Integration testing examples
+
+#### @SpringBootTest and MockMvc
+
+pom.xml
+```xml
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>6.0.13</version>
+      <scope>test</scope>
+    </dependency>
+```
+
+Test
+
+```kotlin
+@SpringBootTest
+@AutoConfigureMockMvc(addFilters = false)
+@ContextConfiguration(initializers = [SsoClientSharedCookieLibInitializer::class])
+@ActiveProfiles("test")
+class HomeownerFlowControllerIntegrationTest(
+  @Autowired private val mockMvc: MockMvc,
+) {
+    // use  @MockBean to mock dependencies
+    
+  @Test // in case of async calls
+  fun `test getObject`() = runTest { // -> allow to invoke suspende functions (i.e. when mock) 
+    val mvcResult = mockMvc.get("/my/endpoint") {
+          param("myParam", "xx")
+      }
+        .andExpect { request { asyncStarted() } } // <-- asyncStarted
+        .andDo { MockMvcResultHandlers.log() }
+        .andReturn()
+
+    mockMvc.perform(MockMvcRequestBuilders.asyncDispatch(mvcResult))
+      .andExpect(status().isOk())
+      .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+      .andExpect(jsonPath("$.buildingId").value(buildingId))
+  } 
+  @Test // in case of sync calls
+  fun `test getObject`() = runTest { // -> allow to invoke suspende functions (i.e. when mock)
+      mockMvc.get("/my/endpoint") {
+          param("myParam", "xx")
+      }
+          .andExpect {
+              status { isOk() }
+              jsonPath("$.id") { value(1) }
+          }
+  }
+}
+```
+
+
+
+
 
 
 ### API Contract tests 
